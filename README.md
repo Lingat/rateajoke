@@ -39,10 +39,10 @@ Decided that it's probably time I probably learn TS and what better way to do it
 
 ## 3. To Do (Frontend)
 
-The frontend is split into 3 feature sets which will make up the MVP for this application.
+The frontend is split into  feature sets which will make up the MVP for this application.
 
 ### 3.1. Feature Set 1. Authentication 
-This focuses on the basic user interface to register and log in to the site. I'll use Auth0 for authentication and get everyone to register and login via Google. Guests can view all lists but they can't upload their own lists.
+This focuses on the basic user interface to register and log in to the site. I'll use Firebase for authentication and get everyone to register and login via Google. Guests can view all jokes but they can't upload their own.
 
 #### 3.1.1. Login Screen
  - [ ] A unique route must exist for this screen
@@ -66,36 +66,63 @@ This focuses on the basic user interface to register and log in to the site. I'l
    - [ ] The login button exists somewhere
    - [ ] A button exists that will take the user to the screen to view joke ratings.
 
-### 3.2. Feature Set 2. Viewing & Editing & Creating Joke Ratings
+### 3.2. Feature Set 2. Viewing & Editing & Creating Jokes
 This feature set will focus on viewing, editing and the creation of the jokes. 
 A unique screen should exist for all of these functions. For these features, there will be more focus on functionality over aesthetic. 
 
-### 3.2.1 Creating Ratings
+### 3.2.1 Creating Jokes
 - [ ] For a user who is logged in / authorised:
-  - [ ] A "create rating" button should exist on the main screen
+  - [ ] A "create joke" button should exist on the main screen
   - [ ] Upon clicking the create button, this takes the user to a unique screen
   - [ ] Allow the user to input the following
-      - [ ]  Name of user being rated*
-      - [ ]  The joke itself*
-      - [ ]  Rating* (1 to 10 stars)
-      - [ ]  Review (optional)
-      - [ ]  Anonymous button (optional)
-  - [ ] There should be a submit button that publishes the review
+      - [ ]  Name of user who made the joke
+      - [ ]  The joke itself
+  - [ ] There should be a submit button that publishes the joke
 
 
  ### 3.2.2 Viewing and Searching Jokes
  - [ ] For all users:
-    - [ ] A unique screen should exist to view all ratings
+    - [ ] A unique screen should exist to view all jokes
     - [ ] A search function by person who made a joke should be available
+    - [ ] The jokes should be swipable on mobile, swiping left and right to view jokes
+    - [ ] Each joke should have the following:
+      - [ ]  Name of user who made the joke
+      - [ ]  The joke itself
+      - [ ]  Rating (the average)
+      - [ ]  Reviews section
 
-### 3.2.3 Editing Ratings
+### 3.2.3 Editing and Deleting Jokes
 - [ ] For a user who is logged in / authorised:
-  - [ ] A button exists somewhere to allow users to edit their own ratings
+  - [ ] A button exists somewhere to allow users to edit jokes
   - [ ] Upon clicking the edit button, this takes the user to a unique screen
   - [ ] The user should be able to edit all of the inputs
-  - [ ] The user should also be able to delete the rating entirely
+  - [ ] The user should also be able to delete the joke entirely
   - [ ] A button exists on the unique screen to save their changes
 
+### 3.3. Feature Set 3. Viewing & Editing & Creating Reviews
+This feature set will focus on viewing, editing and the creation of reviews. 
+
+### 3.3.1 Reviewing Jokes
+- [ ] Upon viewing a joke, a user who is logged in / authorised should be able to:
+  - [ ] A "rating" with starts button should exist for each joke
+  - [ ] The user should be able to select a rating 1 - 10
+  - [ ] The user should have an option to leave a review through a textbox
+  - [ ] The user should have the option to remain anonymous
+  - [ ] A submit button should exist to submit the review
+
+ ### 3.3.2 Viewing Reviews
+ - [ ] For all users:
+    - [ ] Jokes should have a section for all reviews
+    
+### 3.3.3 Editing and Deleting Reviews
+- [ ] For a user who is logged in / authorised:
+  - [ ] A button exists somewhere to allow users to edit their own reviews
+  - [ ] Upon clicking the edit button, this takes the user to a unique screen
+  - [ ] The user should be able to edit all of the inputs
+  - [ ] The user should also be able to delete the review entirely
+  - [ ] A button exists on the unique screen to save their changes
+ 
+      
 ## 4. To Do (Backend)
 The backend is split into the main API endpoints.
 
