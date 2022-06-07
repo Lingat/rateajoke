@@ -66,7 +66,7 @@ This focuses on the basic user interface to register and log in to the site. I'l
    - [ ] The login button exists somewhere
    - [ ] A button exists that will take the user to the screen to view joke ratings.
 
-### 3.2. Feature Set 2. Viewing & Editing & Creating Jokes
+### 3.2. Feature Set 2. Jokes
 This feature set will focus on viewing, editing and the creation of the jokes. 
 A unique screen should exist for all of these functions. For these features, there will be more focus on functionality over aesthetic. 
 
@@ -99,7 +99,7 @@ A unique screen should exist for all of these functions. For these features, the
   - [ ] The user should also be able to delete the joke entirely
   - [ ] A button exists on the unique screen to save their changes
 
-### 3.3. Feature Set 3. Viewing & Editing & Creating Reviews
+### 3.3. Feature Set 3. Reviews
 This feature set will focus on viewing, editing and the creation of reviews. 
 
 ### 3.3.1 Reviewing Jokes
